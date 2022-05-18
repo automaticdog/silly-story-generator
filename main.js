@@ -1,6 +1,7 @@
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const storyContent = document.querySelector('.story');
+const parentContainer = document.querySelector('.container-fluid');
 
 // const startingHeight = document.getElementById('main-content');
 // console.log(startingHeight.height());
@@ -35,4 +36,6 @@ function result() {
 
 	storyContent.textContent = newStory;
 	storyContent.style.visibility = 'visible';
+	parentContainer.style.marginTop = '20vh';
+	parentContainer.style.paddingTop = '0'
 }
