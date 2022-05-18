@@ -21,7 +21,7 @@ function result() {
 	let charName = randomValueFromArray(insertX);
 	let storySetting = randomValueFromArray(insertY);
 	let storyAction = randomValueFromArray(insertZ);
-	let newStory = `"It was 94 degrees outside, so ${charName} went for a walk. When they got to ${storySetting}, they stared in horror for a few moments, then ${storyAction}. Bob saw the whole thing, but was not surprised — ${charName} weighs 300 pounds, and it was a hot day."`;
+	let newStory = `"It was 94 degrees outside, so ${charName} went for a walk. When he got to ${storySetting}, he stared in horror for a few moments, then ${storyAction}. Bob saw the whole thing, but was not surprised — ${charName} weighs 300 pounds, and it was a hot day."`;
 
 	if(customName.value !== '') {
 		newStory = newStory.replace('Bob', `${customName.value}`)

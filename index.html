@@ -11,56 +11,6 @@
 
     <style>
 
-  @media screen and (max-width: 820px) {
-    .container-fluid {
-      display: grid;
-    }
-
-    div.story-container .col-sm-6 {
-      width: 75%;
-    }
-  }
-
-  @media screen and (max-width: 680px) {
-    .col-sm-10 {
-      width: 100%;
-    }
-
-    input[type="text"] {
-      width: 68vw !important;
-      margin: 0 15vw;
-    }
-
-    div.centered {
-      display: block !important;
-    }
-
-    p {
-      margin: 25px;
-    }
-
-    .form-group label {
-      width: 100%;
-      text-align: center;
-      padding-bottom: 15px;
-    }
-
-    #radio-buttons {
-      margin: 0 auto;
-      width: 138px;
-      padding-bottom: 20px;
-    }
-
-    button {
-      display: block;
-      margin: 0 auto !important;
-    }
-
-    col {
-      display: none !important;
-    }
-  }
-
     .container-fluid {
       padding-top: 30vh;
       align-items: center;
@@ -146,6 +96,65 @@
       visibility: hidden;
       text-align: center;
     }
+
+    @media screen and (min-width: 820px) {
+      label[for="customname"] {
+        padding: 0 25px 0 10px !important;
+      }      
+    .story-container .col-sm-10 {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .container-fluid {
+      display: grid;
+    }
+
+    div.story-container .col-sm-6 {
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .col-sm-10 {
+      width: 100%;
+    }
+
+    input[type="text"] {
+      width: 68vw !important;
+      margin: 0 15vw;
+    }
+
+    div.centered {
+      display: block !important;
+    }
+
+    p {
+      margin: 25px;
+    }
+
+    .form-group label {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    #radio-buttons {
+      margin: 0 auto;
+      width: 138px;
+      padding-bottom: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto !important;
+    }
+
+    col {
+      display: none !important;
+    }
+  }
 
     </style>
     <script src="main.js" defer></script>
