@@ -21,8 +21,48 @@
     }
   }
 
+  @media screen and (max-width: 680px) {
+    .col-sm-10 {
+      width: 100%;
+    }
+
+    input[type="text"] {
+      width: 68vw !important;
+      margin: 0 15vw;
+    }
+
+    div.centered {
+      display: block !important;
+    }
+
+    p {
+      margin: 25px;
+    }
+
+    .form-group label {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    #radio-buttons {
+      margin: 0 auto;
+      width: 138px;
+      padding-bottom: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto !important;
+    }
+
+    col {
+      display: none !important;
+    }
+  }
+
     .container-fluid {
-      padding-top: 36vh;
+      padding-top: 30vh;
       align-items: center;
       position: absolute;
       height: 50vh;
@@ -43,9 +83,8 @@
 
     body {
       font-family: helvetica, sans-serif;
-      width: 1200px;
       background: linear-gradient(36deg,#ffc700 3%,#e937a0 37%,#d322ea 61%,#4721d3 96%);
-      height: 100vh;
+      background-attachment: fixed;
     }
 
     label {
@@ -118,9 +157,9 @@
       <div class="row">
         <div class="col">
         </div>
-        <div class="col-8">
+        <div class="col-sm-10">
           <h1>Silly Story Generator</h1>
-          <div class="centered">
+          <div class="form-group centered">
             <label for="customname">Enter custom name:</label>
             <input id="customname" type="text" placeholder="">
           </div>
@@ -131,9 +170,11 @@
     <div class="row">
       <div class="col">
       </div>
-      <div class="col-sm-6 centered">
-        <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-        <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+      <div class="col-sm-10 centered">
+        <div id="radio-buttons">
+          <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+          <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+        </div>
         <button class="randomize">Write me a silly story!</button>
       </div>
       <div class="col">
@@ -142,7 +183,7 @@
 
     <div class="row story-container">
       <div class="col"></div>
-      <div class="col-sm-6">
+      <div class="col-sm-10">
         <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
         <p class="story"></p>
       </div>

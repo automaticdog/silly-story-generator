@@ -36,6 +36,11 @@ function result() {
 
 	storyContent.textContent = newStory;
 	storyContent.style.visibility = 'visible';
-	parentContainer.style.marginTop = '20vh';
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		parentContainer.style.marginTop = '7vh';
+	}
+	else {
+		parentContainer.style.marginTop = '20vh';
+	}
 	parentContainer.style.paddingTop = '0'
 }
